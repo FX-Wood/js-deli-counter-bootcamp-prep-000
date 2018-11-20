@@ -9,7 +9,7 @@ function nowServing(deliLine) {
 
 function currentLine(deliLine)  {
   if (deliLine.length > 0)  {
-    deliLineString = 'The line is currently: ';
+    let deliLineString = 'The line is currently: ';
     for (let i = 0; i < deliLine.length; i++) {
       deliLineString += `${i+1}. ${deliLine[i]}`;
     }
