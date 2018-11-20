@@ -4,5 +4,5 @@ function takeANumber(deliLine, name)  {
 }
 
 function nowServing(deliLine) {
-  return deliline.length > 0 ? deliLine.unshift() : "The line is currently empty."
+  return deliLine.length > 0 ? deliLine.unshift() : "The line is currently empty."
 }
