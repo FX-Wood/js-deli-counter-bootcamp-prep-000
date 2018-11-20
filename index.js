@@ -13,7 +13,7 @@ function currentLine(deliLine)  {
     for (let i = 0; i < deliLine.length - 1; i++) {
       deliLineString += `${i+1}. ${deliLine[i]}, `;
     }
-    deliLineString += `${deliLine.length}. ${deliLine[deliLine.length}`
+    deliLineString += `${deliLine.length}. ${deliLine[deliLine.length}`;
     return deliLineString;
   } else {
     return "The line is currently empty.";
