@@ -10,9 +10,10 @@ function nowServing(deliLine) {
 function currentLine(deliLine)  {
   if (deliLine.length > 0)  {
     let deliLineString = 'The line is currently: ';
-    for (let i = 0; i < deliLine.length; i++) {
+    for (let i = 0; i < deliLine.length - 1; i++) {
       deliLineString += `${i+1}. ${deliLine[i]}, `;
     }
+    deliLineString += `${deliLine.length}. ${deliLine[deliLine.length}`
     return deliLineString;
   } else {
     return "The line is currently empty.";
