@@ -4,5 +4,5 @@ function takeANumber(deliLine, name)  {
 }
 
 function nowServing(deliLine) {
-  return deliLine.length > 0 ? `Currently serving ${deliLine.unshift()}` : "There is nobody waiting to be served!"
+  return deliLine.length > 0 ? `Currently serving ${deliLine.shift()}` : "There is nobody waiting to be served!"
 }
