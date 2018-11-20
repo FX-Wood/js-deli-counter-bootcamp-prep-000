@@ -6,3 +6,15 @@ function takeANumber(deliLine, name)  {
 function nowServing(deliLine) {
   return deliLine.length > 0 ? `Currently serving ${deliLine.shift()}.` : "There is nobody waiting to be served!"
 }
+
+function currentLine(deliLine)  {
+  if (deliLine.length > 0)  {
+    deliLineString = 'The line is currently: ';
+    for (let i = 0; i < deliLine.length; i++) {
+      deliLineString += `${i+1}. ${deliLine[i]}`;
+    }
+    return deliLineString;
+  } else {
+    return "The line is currently empty.";
+  }
+}
