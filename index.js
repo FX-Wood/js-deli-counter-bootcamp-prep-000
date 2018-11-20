@@ -1,5 +1,6 @@
 function takeANumber(deliLine, name)  {
-  return `Welcome, ${name}. You are number ${deliLine.length + 1} in line.`
+  deliLine.push(`Welcome, ${name}. You are number ${deliLine.length + 1} in line.`)
+  return deliLine
 }
 
 function nowServing(deliLine) {
